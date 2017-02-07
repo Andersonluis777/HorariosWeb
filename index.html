@@ -7,7 +7,7 @@
     {% for turma in curso.turmas %}
         <div class="container">
         <h1>{{ turma.nome }}</h1>
-        <table class="table table-responsive text-center">
+        <table class="table table-responsive table-bordered text-center">
         <tr>
         {% for coluna in turma.colunas %}
             <th class="text-center">{{ coluna }}</th>
