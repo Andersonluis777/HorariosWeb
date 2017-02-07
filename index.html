@@ -2,12 +2,11 @@
 ---
 
 <link rel="stylesheet" type="text/css" href="bootstrap.css">
-<link rel="stylesheet" type="text/css" href="material.css">
 
 {% for curso in site.data.horarios.cursos %}
     {% for turma in curso.turmas %}
         <h1>{{ turma.nome }}</h1>
-        <table class="mdl-data-table mdl-data-table__cell--non-numeric">
+        <table class="table">
         <tr>
         {% for coluna in turma.colunas %}
             <th class>{{ coluna }}</th>
