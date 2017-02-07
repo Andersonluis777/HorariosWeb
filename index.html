@@ -7,7 +7,7 @@
     {% for turma in curso.turmas %}
         <div class="container">
         <h1>{{ turma.nome }}</h1>
-        <table class="table" .text-center>
+        <table class="table text-center">
         <tr>
         {% for coluna in turma.colunas %}
             <th class>{{ coluna }}</th>
@@ -18,8 +18,6 @@
             <td>{{linha.horario}}</td>
             {% for aula in linha.aulas %}
                 {% if aula.disciplina == "INTERVALO" or aula.disciplina == "JANTAR" or aula.disciplina == "ALMOÇO" %}
-                    <td></td>
-                    <td></td>
                     <td>{{aula.disciplina}}</td>
                     {% continue %}
      
