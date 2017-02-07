@@ -19,7 +19,6 @@
             {% for aula in linha.aulas %}
                 {% if aula.disciplina == "INTERVALO" or aula.disciplina == "JANTAR" or aula.disciplina == "ALMOÇO" %}
                     <td colspan="5">{{aula.disciplina}}</td>
-                    {% continue %}
      
                 <td>{{aula.disciplina}}<br>{{aula.professor}}</td>
             {% endfor %}
