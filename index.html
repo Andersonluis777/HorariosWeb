@@ -5,6 +5,7 @@
 
 {% for curso in site.data.horarios.cursos %}
     {% for turma in curso.turmas %}
+        <div class="container">
         <h1>{{ turma.nome }}</h1>
         <table class="table">
         <tr>
@@ -21,5 +22,6 @@
         </tr>
         {% endfor %}
         </table>
+        </div>
     {% endfor %}
 {% endfor %}
