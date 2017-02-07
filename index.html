@@ -7,16 +7,16 @@
     {% for turma in curso.turmas %}
         {{ turma.nome }}
         <table .table>
-        <tr>
+        <tr .table th>
         {% for coluna in turma.colunas %}
-            <th>{{ coluna }}</th>
+            <th .table td>{{ coluna }}</th>
         {% endfor %}
         </tr>
         {% for linha in turma.linhas %}
-        <tr>
-            <td>{{linha.horario}}</td>
+        <tr .table th>
+            <td .table td>{{linha.horario}}</td>
             {% for aula in linha.aulas %}
-                <td>{{aula.disciplina}}<br>{{aula.professor}}</td>
+                <td .table td>{{aula.disciplina}}<br>{{aula.professor}}</td>
             {% endfor %}
         </tr>
         {% endfor %}
