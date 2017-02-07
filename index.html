@@ -17,12 +17,12 @@
         <tr>
             <td>{{linha.horario}}</td>
             {% for aula in linha.aulas %}
-                {% if aula == "INTERVALO" or aula == "JANTAR" or aula == "ALMOÇO"%}
+                {% if aula.disciplina == "INTERVALO" or aula.disciplina == "JANTAR" or aula.disciplina == "ALMOÇO" %}
                     <td></td>
                     <td></td>
                     <td .info>{{aula.disciplina}}</td>
                     {% continue %}
-            
+     
                 <td>{{aula.disciplina}}<br>{{aula.professor}}</td>
             {% endfor %}
         </tr>
