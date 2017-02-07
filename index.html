@@ -1,10 +1,12 @@
 ---
 ---
 
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
 {% for curso in site.data.horarios.cursos %}
     {% for turma in curso.turmas %}
         {{ turma.nome }}
-        <table>
+        <table .table>
         <tr>
         {% for coluna in turma.colunas %}
             <th>{{ coluna }}</th>
