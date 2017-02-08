@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Horários</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/template01.css">
 <link rel="stylesheet" href="css/template02.css">
 <link rel="stylesheet" href="css/template03.css">
-<body id="myPage">
+<body id="Home">
 
 <!-- Side Navigation on click -->
 <nav class="w3-sidenav w3-white w3-card-2 w3-animate-left" style="display:none;z-index:2" id="mySidenav">
@@ -26,7 +26,7 @@
   <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
     <a class="w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
   </li>
-  <li><a href="#" class="w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a></li>
+  <li><a href="#" class="w3-teal">Home</a></li>
   <li class="w3-hide-small"><a href="#curso" class="w3-hover-white">Cursos</a></li>
   <li class="w3-hide-small"><a href="#professor" class="w3-hover-white">Professor</a></li>
  </ul>
@@ -44,25 +44,7 @@
 <div class="w3-display-container w3-animate-opacity">
   <img src="img/logo_ifpb.jpg" alt="boat" style="width:120%;min-height:350px;max-height:600px;">
   <div class="w3-container w3-display-bottomright w3-margin-bottom">  
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-btn w3-xlarge w3-theme w3-hover-teal" title="IFPB">Campus Guarabira</button>
-  </div>
-</div>
-
-<!-- Modal -->
-<div id="id01" class="w3-modal">
-  <div class="w3-modal-content w3-card-8 w3-animate-top">
-    <header class="w3-container w3-teal"> 
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-closebtn"><i class="fa fa-remove"></i></span>
-      <h4>Oh snap! We just showed you a modal..</h4>
-      <h5>Because we can <i class="fa fa-smile-o"></i></h5>
-    </header>
-    <div class="w3-container">
-      <p>Cool huh? Ok, enough teasing around..</p>
-      <p>Go to our <a class="w3-btn" href="/w3css/default.asp">Horários IF</a> to learn more!</p>
-    </div>
-    <footer class="w3-container w3-teal">
-      <p>Modal footer</p>
-    </footer>
+    <button class="w3-btn w3-xlarge w3-theme w3-hover-teal" title="IFPB"><a href="http://www.ifpb.edu.br/guarabira" target="_green">Campus Guarabira</a></button>
   </div>
 </div>
 
