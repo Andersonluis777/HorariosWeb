@@ -9,7 +9,7 @@
 
 <!-- Header -->
 <header class="w3-display-container w3-content" style="max-width:1500px">
-  <img class="w3-image" src="img/logo_ifpb.png" alt="Me" width="50" height="50">
+  <img class="w3-image w3-center" src="img/logo_ifpb.png" alt="Me" width="150" height="150">
    <div class="w3-display-middle w3-padding-xlarge w3-border w3-wide w3-text-light-grey w3-center">
     <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">IFPB</h1>
     <h5 class="w3-hide-large" style="white-space:nowrap">IFPB</h5>
@@ -111,8 +111,6 @@ var ezoicSearchable = 1;
 </ul>
 
 <!-- Page content -->
-<div class="w3-content w3-padding-xlarge w3-margin-top" id="turmas">
-
   <!-- (turmas) -->
   <div class="w3-light-grey w3-padding-xlarge w3-padding-32 w3-margin-top" id="turmas">
 	  {% for curso in site.data.horarios.cursos %}
@@ -143,8 +141,6 @@ var ezoicSearchable = 1;
 	    {% endfor %}
 	  {% endfor %}
   </div>
-
-<!-- End page content -->
-</div>
+  <!-- End page content -->
 </body>
 </html>
