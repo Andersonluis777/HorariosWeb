@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html>
+{% extends "index.html" %}
 <title>IFHorarios</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -119,33 +120,7 @@ var ezoicSearchable = 1;
   <!-- Contact -->
   <div class="w3-light-grey w3-padding-xlarge w3-padding-32 w3-margin-top" id="contact">
     <h3 class="w3-center">horários</h3>
-	{% for curso in site.data.horarios.cursos %}
-	    {% for turma in curso.turmas %}
-		<div class="container">
-		<h1>{{ turma.nome }}</h1>
-		<table class="table table-responsive table-bordered text-center">
-		<tr>
-		{% for coluna in turma.colunas %}
-		    <th class="text-center">{{ coluna }}</th>
-		{% endfor %}
-		</tr>
-		{% for linha in turma.linhas %}
-		<tr>
-		    <td>{{linha.horario}}</td>
-		    {% for aula in linha.aulas %}
-			{% if aula.disciplina == "INTERVALO" or aula.disciplina == "JANTAR" or aula.disciplina == "ALMOÇO" %}
-			    <td colspan="5">{{aula.disciplina}}</td>
-			    {% break %}
-			{% else %}
-			    <td>{{aula.disciplina}}<br>{{aula.professor}}</td>
-			{% endif %}
-		    {% endfor %}
-		</tr>
-		{% endfor %}
-		</table>
-		</div>
-	    {% endfor %}
-	{% endfor %}
+	{% block content%} {% endblock %}
   </div>
 
 <!-- End page content -->
