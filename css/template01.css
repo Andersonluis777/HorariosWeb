@@ -146,7 +146,7 @@ input[type=checkbox].w3-check:disabled+.w3-validate,input[type=radio].w3-radio:d
 .w3-col.l10{width:83.33333%}
 .w3-col.l11{width:91.66666%}
 .w3-col.l12{width:99.99999%}}
-.w3-content{max-width:980px;margin:auto}
+.w3-content{max-width:1100px;margin:auto}
 .w3-rest{overflow:hidden}
 .w3-layout-container{display:table;width:100%}.w3-layout-row{display:table-row}.w3-layout-cell,.w3-layout-col{display:table-cell}
 .w3-layout-top{vertical-align:top}.w3-layout-middle{vertical-align:middle}.w3-layout-bottom{vertical-align:bottom}
