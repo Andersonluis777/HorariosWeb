@@ -2,7 +2,7 @@
 ---
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-{% extends "home.html" %}
+{% include "home.html" %}
 
 {% block content %}
     {% for curso in site.data.horarios.cursos %}
