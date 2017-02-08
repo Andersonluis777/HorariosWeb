@@ -11,18 +11,18 @@ layout: default
         <table class="table-responsive table table-bordered text-center">
         <tr>
         {% for coluna in turma.colunas %}
-            <th class="text-center">{{ coluna }}</th>
+            <th class="text-center w3-theme-green">{{ coluna }}</th>
         {% endfor %}
         </tr>
         {% for linha in turma.linhas %}
         <tr>
-            <td>{{linha.horario}}</td>
+            <td class="w3-theme-green">{{linha.horario}}</td>
             {% for aula in linha.aulas %}
                 {% if aula.disciplina == "INTERVALO" or aula.disciplina == "JANTAR" or aula.disciplina == "ALMOÇO" %}
-                    <td colspan="5">{{aula.disciplina}}</td>
+                    <td colspan="5" class="w3-theme-light">{{aula.disciplina}}</td>
                     {% break %}
                 {% else %}
-                    <td>{{aula.disciplina}}<br>{{aula.professor}}</td>
+                    <td class="w3-theme-light">{{aula.disciplina}}<br>{{aula.professor}}</td>
                 {% endif %}
             {% endfor %}
         </tr>
