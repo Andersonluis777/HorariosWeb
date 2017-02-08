@@ -1,8 +1,8 @@
 ---
+my_variable: tabelas.html
 ---
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-{% include "home.html" %}
 
 {% for curso in site.data.horarios.cursos %}
     {% for turma in curso.turmas %}
