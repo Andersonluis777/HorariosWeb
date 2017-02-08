@@ -25,6 +25,6 @@
 
 .w3-text-CSM{font-family:"Times New Roman"}
 body {
-    background: url(img/background.jpg);
+    background-image: url("img/background.jpg");
     opacity: 0.5;
 }
