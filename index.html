@@ -8,7 +8,7 @@ layout: default
     {% for turma in curso.turmas %}
         <div class="container w3-center">
         <h1>{{ turma.nome }}</h1>
-        <table class="w3-table text-center">
+        <table class="w3-col table table-responsive text-center">
         <tr>
         {% for coluna in turma.colunas %}
             <th class="text-center w3-theme-green">{{ coluna }}</th>
