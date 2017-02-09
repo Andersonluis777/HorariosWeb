@@ -6,9 +6,9 @@ layout: default
 
 {% for curso in site.data.horarios.cursos %}
     {% for turma in curso.turmas %}
-        <div class="container w3-center">
+        <div class="table-responsive container w3-center">
         <h1>{{ turma.nome }}</h1>
-        <table class="w3-col table table-responsive text-center">
+        <table class="table text-center">
         <tr>
         {% for coluna in turma.colunas %}
             <th class="text-center w3-theme-green">{{ coluna }}</th>
