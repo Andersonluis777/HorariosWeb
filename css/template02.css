@@ -24,6 +24,6 @@
 .w3-hover-border-theme:hover {border-color:#000000 !important}
 
 .w3-text-CSM{font-family:"Times New Roman"}
-body {
-    background-image: url("img/logo_ifpb.jpg");
+.w3-img-back {
+    background-image: url("img/background.jpeg");
 }
