@@ -6,8 +6,8 @@ layout: default
 
 {% for curso in site.data.horarios.cursos %}
     {% for turma in curso.turmas %}
-        {% for professor in turma.linhas.aulas.professores %}
-            {{ professor }}
+        {% for prof in turma.linhas.aulas.professor %}
+            {{ prof }}
         {% endfor %}
     {% endfor %}
 {% endfor %}
