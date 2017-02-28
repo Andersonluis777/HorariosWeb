@@ -6,11 +6,8 @@ layout: default
 
 {% for curso in site.data.horarios.cursos %}
     {% for turma in curso.turmas %}
-        <div class="table-responsive container w3-center">
         {% for professor in turma.linhas.aulas.professores %}
-            {{ member }}
+            {{ professor }}
         {% endfor %}
-        
-        </div>
     {% endfor %}
 {% endfor %}
