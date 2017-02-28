@@ -8,8 +8,10 @@ layout: default
     {% for turma in curso.turmas %}
         {% for linha in turma.linhas %}
             {% for aula in linha.aulas %}
-                {{aula.professor}}
-                <br>
+                {%if aula.professor!=""%}
+                    {{aula.professor}}
+                    <br>
+                {%endif%}
             {% endfor %}
         {% endfor %}
     {% endfor %}
