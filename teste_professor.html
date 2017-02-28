@@ -9,6 +9,7 @@ layout: default
         {% for linha in turma.linhas %}
             {% for aula in linha.aulas %}
                 {{aula.professor}}
+                <br>
             {% endfor %}
         {% endfor %}
     {% endfor %}
