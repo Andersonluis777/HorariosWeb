@@ -4,13 +4,13 @@ layout: default
 
 {% assign professores = ["Alexandre", "Arquimedes", "Cl\xe1udia", "C\xedcero D", "Dayana", "Divino", "Jefferson", "L\xedbna", "Marcos", "Michel", "N\xe9lio", "Rodrigo", "R\xf4mulo Amorim", "Sayonara", "Vera"] %}
 
-{% for prof in professores %} 
-	<p>prof</p>
-{% endfor %}
+
 
 <form>
 	<select name="q">
-	    <option>Alexandre</option>
+	    {% for prof in professores %} 
+	        <option>prof</option>
+	    {% endfor %}
 	</select>
 	<br>
 	<input type="submit">
