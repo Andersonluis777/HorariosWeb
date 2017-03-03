@@ -1,6 +1,6 @@
 import webapp2
 
-form=open("index.html").read()
+form=open("form.html").read()
 
 class MainHandler(Handler):
 	def get(self):
