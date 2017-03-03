@@ -1,0 +1,17 @@
+application: unit3
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: .*
+  script: templates.app
+
+libraries:
+- name: webapp2
+  verson: "2.5.2"
