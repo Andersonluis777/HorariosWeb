@@ -38,10 +38,11 @@
 </div>
  <script>
 	function myFunction() {
-  var input, filter;
-    input = document.getElementById("myInput");
-    filter = input.value.toUpperCase();
-    document.getElementById(filter).style.visibility = "visible";
+  	    var input, filter;
+	    input = document.getElementById("myInput");
+	    filter = input.value.toUpperCase();
+	    console.log(filter);
+	    document.getElementById(filter).style.visibility = "visible";
 	}
 </script>
 <input type="text" placeholder="Search.." id="myInput">
