@@ -4,7 +4,7 @@ layout: default
 
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 {% for profx in site.data.horarioProf.professores %}
-<div id="{{profx}}" style="visibility: none">
+<div id="{{profx}}" style="visibility: hidden">
     <h1> {{profx}} </h1>
     {% for curso in site.data.horarios.cursos %}
         {% for turma in curso.turmas %}
